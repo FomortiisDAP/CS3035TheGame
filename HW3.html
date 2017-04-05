@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- use chrome -->
+    <meta charset="UTF-8" />
+    <title>The Game</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="HW3.js"></script>
+    <style>
+      td {
+        padding: 12px;
+        text-align: center;
+        width: 120px;
+	border: 5px;
+      }
+      .move-buttons {
+        text-align: center;
+      }
+      .player {
+	color: blue;
+      }
+      .unexplored {
+        color: gray;
+      }
+	.walls {
+        color: red;
+      }
+
+player   {color: blue;}
+unexplored   {color: gray;}
+walls  {color: red;}
+
+
+	</style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h2><center>The Game</center></h2>
+      </header>
+      <main>
+        
+        <div>
+          <p id="message" class="hidden"></p>
+          <div class="form-inline">
+            <input type="text" placeholder="Player Name" id="input" class="form-control hidden"/>
+            <button id="yes-button">Yes</button>
+            <button id="no-button">No</button>
+          </div>
+        </div>
+
+
+
+        <div>
+        <div id="map-table" class="table"></div>
+        </div>
+        <div class="container move-buttons">
+              <button class="btn btn-info" id="up-Btn">Up</button>
+              <button class="btn btn-info" id="down-Btn">Down</button>
+              <button class="btn btn-info" id="left-Btn">Left</button>
+              <button class="btn btn-info" id="right-Btn">Right</button>
+        </div>
+
+      </main>
+
+    </div>
+<p>
+<ol> <unexplored> ? </unexplored> == Unexplored</ol>
+<ol>  <player> P </player> == Player</ol>
+<ol> <walls> |W| </walls>== Wall</ol>
+<ol>_E_ == Empty Space</ol>
+
+</p>
+  </body>
+</html>
